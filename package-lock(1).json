@@ -1,0 +1,19 @@
+{
+  "requires": true,
+  "lockfileVersion": 1,
+  "dependencies": {
+    "@ngx-pwa/local-storage": {
+      "version": "6.2.3",
+      "resolved": "https://registry.npmjs.org/@ngx-pwa/local-storage/-/local-storage-6.2.3.tgz",
+      "integrity": "sha512-ANLu5spBON2lVbzciaYQeLoUFXN+NZjYZLKtd30v2iBQOvgvN83gZk8p5D7a7KojTm29deaMuJ04LTHJ3WpgxQ==",
+      "requires": {
+        "tslib": "^1.9.0"
+      }
+    },
+    "tslib": {
+      "version": "1.9.3",
+      "resolved": "https://registry.npmjs.org/tslib/-/tslib-1.9.3.tgz",
+      "integrity": "sha512-4krF8scpejhaOgqzBEcGM7yDIEfi0/8+8zDRZhNZZ2kjmHJ4hv3zCbQWxoJGz1iw5U0Jl0nma13xzHXcncMavQ=="
+    }
+  }
+}

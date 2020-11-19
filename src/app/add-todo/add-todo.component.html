@@ -1,0 +1,28 @@
+<div class="col-md-6">
+  <h2 class="text-center">Add Todo</h2>
+  <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="title">Tittle:</label>
+      <input formControlName="title" placeholder="Title" name="title" class="form-control" id="title" />
+      <div class="feedback-red" *ngIf="isInvalid('title')">
+        Title is empty.
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="description">Description:</label>
+      <input formControlName="description" placeholder="Desciption" name="description" class="form-control"
+        id="description" />
+      <div class="feedback-red" *ngIf="isInvalid('description')">
+        Desciption is empty.
+      </div>
+    </div>
+
+    <a href="http://localhost:4200/">
+      <button button [disabled]="addForm.invalid" class="btn btn-success">
+        Submit
+      </button>
+    </a>
+    <button class="btn btn-danger ml-2 " (click)="onCancel()">Cancel</button>
+  </form>
+</div>
